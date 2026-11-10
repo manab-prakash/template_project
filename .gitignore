@@ -1,11 +1,3 @@
-# History files
-.Rhistory
-.Rapp.history
-
-# Session Data files
-.RData
-.RDataTmp
-
 *.snm
 *.synctex.gz
 *.toc
@@ -15,6 +7,16 @@
 *.out
 *.bbl
 *.blg
+
+# History files
+.Rhistory
+.Rapp.history
+
+# Session Data files
+.RData
+.RDataTmp
+
+
 # User-specific files
 .Ruserdata
 
