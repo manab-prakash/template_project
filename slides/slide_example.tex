@@ -1,0 +1,136 @@
+
+\documentclass[11pt,aspectratio=169]{beamer}
+
+%---------------------------------------
+% Presentation style
+%---------------------------------------
+\usetheme{Boadilla}
+\usecolortheme{default}
+
+% Remove navigation buttons
+\setbeamertemplate{navigation symbols}{}
+
+% Show slide numbers
+\setbeamertemplate{footline}[frame number]
+
+%---------------------------------------
+% Packages
+%---------------------------------------
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+%---------------------------------------
+% Title information
+%---------------------------------------
+\title{My First Beamer Presentation}
+\subtitle{An Introduction to the Topic}
+\author{Student Name}
+\institute{University Name}
+\date{\today}
+
+%---------------------------------------
+% Begin presentation
+%---------------------------------------
+\begin{document}
+	
+	% Slide 1: Title
+	\begin{frame}
+		\titlepage
+	\end{frame}
+	
+	% Slide 2: Outline
+	\begin{frame}{Outline}
+		\tableofcontents
+	\end{frame}
+	
+	%---------------------------------------
+	\section{Introduction}
+	%---------------------------------------
+	
+	% Slide 3: Bullet points
+	\begin{frame}{Introduction}
+		
+		\begin{itemize}
+			\item This is the first point.
+			\item This is the second point.
+			\item This is the third point.
+		\end{itemize}
+		
+	\end{frame}
+	
+	%---------------------------------------
+	\section{Main Discussion}
+	%---------------------------------------
+	
+	% Slide 4: Text and blocks
+	\begin{frame}{Main Idea}
+		
+		Here is a short explanation of the topic.
+		
+		\begin{block}{Important Concept}
+			This is an example of a highlighted
+			concept or definition.
+		\end{block}
+		
+	\end{frame}
+	
+	% Slide 5: Equations
+	\begin{frame}{An Example Equation}
+		
+		We can write a simple equation:
+		
+		\begin{equation}
+			Y = \alpha + \beta X + \varepsilon
+		\end{equation}
+		
+		where:
+		\begin{itemize}
+			\item $Y$ is the dependent variable.
+			\item $X$ is the independent variable.
+			\item $\varepsilon$ is the error term.
+		\end{itemize}
+		
+	\end{frame}
+	
+	% Slide 6: Two columns
+	\begin{frame}{Comparing Two Ideas}
+		
+		\begin{columns}
+			
+			\begin{column}{0.48\textwidth}
+				\textbf{Idea One}
+				\begin{itemize}
+					\item First point
+					\item Second point
+				\end{itemize}
+			\end{column}
+			
+			\begin{column}{0.48\textwidth}
+				\textbf{Idea Two}
+				\begin{itemize}
+					\item First point
+					\item Second point
+				\end{itemize}
+			\end{column}
+			
+		\end{columns}
+		
+	\end{frame}
+	
+	%---------------------------------------
+	\section{Conclusion}
+	%---------------------------------------
+	
+	% Slide 7: Conclusion
+	\begin{frame}{Conclusion}
+		
+		\begin{enumerate}
+			\item First takeaway
+			\item Second takeaway
+			\item Third takeaway
+		\end{enumerate}
+		
+	\end{frame}
+	
+\end{document}
+

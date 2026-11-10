@@ -6,6 +6,15 @@
 .RData
 .RDataTmp
 
+*.snm
+*.synctex.gz
+*.toc
+*.nav
+*.aux
+*.log
+*.out
+*.bbl
+*.blg
 # User-specific files
 .Ruserdata
 

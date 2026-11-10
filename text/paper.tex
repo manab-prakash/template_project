@@ -1,0 +1,87 @@
+% Preamble:
+\documentclass[12pt,letterpaper]{article}
+\usepackage{etex}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{fullpage}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{amsmath}
+\usepackage{scalefnt}
+\usepackage{tikz}
+\usepackage[thinlines]{easytable}
+\usepackage{booktabs}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{rotating}
+\usepackage{soul}
+\newcommand{\Lagr}{\mathscr{L}}
+\usepackage{graphicx}
+\linespread{1.1}
+\setlength\parindent{0pt}
+\setlength{\parskip}{.1in}
+
+\usepackage{setspace}
+\usepackage{enumitem}
+
+\usepackage{hyperref}
+
+\usepackage{scrextend}
+\pagestyle{empty}
+
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+\deffootnote[1.8em]{0pt}{1.6em}{\makebox[1.8em][l]{\thefootnotemark.}}
+
+\setlength\parindent{0pt}
+\setlength{\parskip}{.1in}
+
+\deffootnote[1.8em]{0pt}{1.6em}{\makebox[1.8em][l]{\thefootnotemark.}}
+
+\newcommand{\ind}{\hspace{.25in}}
+\newcommand{\red}{\color{red}}
+\newcommand{\vs}{\vspace{.1in}}
+\newcommand{\EV}{\mathbb{E}}
+\newcommand{\pd}[2]{\dfrac{\partial #1}{\partial #2}}
+%%%%%CITATION SETUP%%%%%%
+\usepackage[authoryear]{natbib}
+%\newcommand{\possessivecite}[1]{\citeauthor{#1}'s (\citeyear{#1})}
+%\bibpunct{(}{)}{;}{;}{,}{,}
+
+
+\newif\iflogvar  % Comment out following line to hide text between \iflogvar{}\fi:
+%\logvartrue
+
+%\setlength{\voffset}{0in}
+%\setlength{\headsep}{12.5pt}
+%\setlength{\headheight}{28pt}
+
+\begin{document}
+
+\section*{Description}
+
+South Asia's tiger recovery has become a rare conservation success. The estimated number of wild tigers in Nepal rose from roughly 120 in 2009 to 350 in 2022, meeting the global target of doubling tiger populations ahead of schedule \citep{wwf2022nepal355}. As tiger populations grow within protected areas, conflicts in surrounding areas become more pronounced:\ tigers and other large animals (notably one-horned rhinos and Asian elephants) impose localized risks of crop damages, livestock losses, and human injuries and deaths near park boundaries \citep{lamichhane2018Spatio,acharya2016hwcnepal}. Therefore, the recovery of tigers heightens an already existing tension between humans and wildlife:\ costs are concentrated on households in a narrow band around the park, whereas benefits---in the form of ecosystem services, tourism revenues, and existence values---are diffuse and may not accrue to those bearing the highest risks.
+	
+	A prominent recent study shows that human fatalities are often the largest component of measured conflict costs \citep{gulati2021casualties}. However, the authors estimated those costs using a value per statistical life (VSL) transferred from other contexts. The VSL literature shows that context matters. If local preferences and perceived risk differ from the source studies, transferring values from different contexts might under- or over- estimate the true losses in our study area. We will overcome this limitation by estimating the \emph{species-specific} and \emph{site-specific} value of fatality risks in a setting with pronounced human-wildlife conflicts. We also will estimate tourists' values of tiger sightings inside a large protected area. Combining these estimates will allow us to test whether, at today's population levels, the local marginal benefits (\emph{mb}) of an additional tiger exceeds the local marginal costs (\emph{mc}). Specifically, we will estimate (i) local households' marginal willingness to pay to reduce the fatality risks from tiger and rhino attacks, and (ii) tourists' marginal willingness to pay to increase the chances of tiger sightings. We then evaluate whether $\emph{mb}(N)\ge \emph{mc}(N)$ at the current tiger abundance $N$ in Chitwan National Park (CNP), Nepal.
+	
+	We focus on CNP for three reasons:\ policy relevance, empirical feasibility, and external validity. First, CNP is one of Nepal's flagship protected areas and a UNESCO World Heritage Site, with substantial conservation investment and a long-standing role in tiger conservation. Second, CNP sits in a productive lowland landscape with dense settlement and intensive agriculture in the surrounding buffer-zone region, creating a setting where human-wildlife conflicts are politically salient. Third, CNP supports a large tourism sector and has an unusually rich foundation of ecological monitoring and conflict data, which is essential for our design. These conditions allow us to design resident survey scenarios around credible, locally interpretable risk changes and, in parallel, quantify the relationship between tiger abundance and sighting probability for visitors. Together, these features make CNP an empirically credible setting for valuing multi-species risks and for the marginal welfare comparison that motivates our study.
+	
+	\textbf{(a) Local values of mortality risks from tigers and rhinos.}
+	For household $i$ and species $s\in\{\text{tiger},\text{rhino}\}$, define a small annual mortality-risk reduction $\Delta p_{is}$ (e.g., per 10,000) delivered by mitigation (fencing, early-warning, escorts, etc.). We will use a double-bounded stated preference survey design to elicit respondents' willingness to pay $\emph{WTP}_{is}$, for that risk reduction. The implied value per statistical life $\emph{VSL}_s$ is $\mathbb{E}[\emph{WTP}_{is}/\Delta p_{is}]$. To estimate willingness to pay, we will use a random-utility model \citep{mcfadden.1981} that allows for heterogeneity by distance-to-forest edge, livelihood exposure, prior attack experience, and risk perceptions. We will estimate values for tiger and rhino risks separately, producing two mortality risk estimates and a test of $\emph{VSL}_{\,\text{tiger}} > \emph{VSL}_{\,\text{rhino}}$.
+	
+	Even if tigers and rhinos generated similar expected fatality counts, they may not impose the same welfare loss per unit of risk because hazards differ in dread and perceived controllability \citep{slovic1987risk}. Health valuation studies often find a ``cancer premium'' relative to acute fatalities because cancer is feared more \citep{viscusi2014cancer}. Analogously, tiger risk is plausibly more dreaded:\ tigers are stealth predators, attacks can become vivid local narratives, and households have limited means of defense. Nepal's low prevalence of civilian firearms reinforces the asymmetry in perceived ability to defend against tiger attacks \citep{smallarmssurvey2017}. By contrast, communities sometimes repel rhinos during attempted crop raidings.  This project provides a direct empirical test of species-specific risk values in a high-stakes conservation context.
+	
+	
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{figure/img1.jpg}
+\end{figure}
+    \newpage
+    
+    \bibliographystyle{aer}
+	\bibliography{backmatter/bibliography.bib}
+    
+\end{document}
