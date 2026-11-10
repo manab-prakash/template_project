@@ -128,11 +128,7 @@ Search for each of the following, confirm the publisher, and click **Install**:
 **Before you begin:** You will clone a repository. 
 
 1. In **VS Code**, open **Source Control** (branch icon on the left), then click **Clone Repository**.
-2. Paste the template repository URL and choose a folder on your computer:
-
-   ```text
-  https://github.com/manab-prakash/template_project
-   ```
+2. Paste the template repository URL and choose a folder on your computer: https://github.com/manab-prakash/template_project
 
 3. When asked, choose **Open** to open the cloned repository in VS Code.
 4. Open `code/hello.R`. From **View → Command Palette**, run **R: Create R terminal**. With the `.R` file active, press **Ctrl + Shift + S** to run the whole file using the R extension. If that shortcut does not work, select the code and press **Ctrl + Enter** to send it to the R terminal. Confirm that the output appears.
