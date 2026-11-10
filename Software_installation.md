@@ -131,7 +131,7 @@ Search for each of the following, confirm the publisher, and click **Install**:
 2. Paste the template repository URL and choose a folder on your computer:
 
    ```text
-   https://template_project](https://github.com/manab-prakash/template_project)
+   [https://template_project](https://github.com/manab-prakash/template_project)
    ```
 
 3. When asked, choose **Open** to open the cloned repository in VS Code.
