@@ -30,28 +30,6 @@ To uninstall these software quickly, change `install` to `uninstall` in the abov
 
 If a program is already installed, you can skip its line. If `winget` is unavailable or an installation fails, use the manual method below.
 
-### Fast way: macOS (Terminal)
-
-*(I haven't verify this way, as I don't have Mac in my machine.)*
-
-Press **Command + Space**, type `Terminal`, and open **Terminal**.
-
-If you have not installed Homebrew, install it first:
-
-```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-
-Follow Homebrew's on-screen instructions, including any steps to add `brew` to your PATH. Then run the following lines **one at a time**:
-
-```bash
-brew install --cask visual-studio-code
-brew install --cask r-app
-brew install git
-brew install --cask github
-```
-
-If you already have Homebrew, skip its installation command. See the [Homebrew website](https://brew.sh/) if `brew` is not recognized.
 
 ### Fast way: Linux (Ubuntu/Debian)
 
@@ -72,7 +50,7 @@ sudo apt install -y code
 
 These Linux commands are for Ubuntu/Debian-based systems. Other distributions use different package managers.
 
-### Manual way: download the installers
+### Manual way: download the installers (Mac users follow this)
 
 If the fast method fails, download the software from its official website and follow the installer instructions:
 
